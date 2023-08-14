@@ -30,9 +30,16 @@ android {
         jvmTarget = '1.8'
     }
 
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+
 }
 
-afterEvaluate {
+/*afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
@@ -44,7 +51,7 @@ afterEvaluate {
             }
         }
     }
-}
+}*/
 
 dependencies {
 
@@ -55,3 +62,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+
