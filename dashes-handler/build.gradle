@@ -47,7 +47,7 @@ afterEvaluate {
 
                 groupId = 'com.github.saqibmirza2007'
                 artifactId = 'dashes-handler'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
     }
